@@ -11,13 +11,23 @@
   <name>india</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
-  <properties>
+ <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-
+ <repositories>
+    <repository>
+      <id>deployment</id>
+      <name>Internal Releases</name>
+      <url>http://3.82.222.3:8081/repository/samplerelease/</url>
+    </repository>
+    <SanpshotRepository>
+      <id>deployment</id>
+      <name>Internal Snapshot Releases</name>
+      <url>http://3.82.222.3:8081/repository/samplesnap/</url>
+    </SnapshotRepository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
